@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>vanilla js</title>
+        <style>
+            #C1{
+                height:400px;
+                width:400px;
+                background-color: white; 
+            }
+            #b1
+            {
+                background-color: rgb(81, 216, 246);
+            }
+            </style>
+            <script>
+              function internalAlert()
+              {
+                   alert("this is canceled")
+
+              }  
+              function internalConfirm()
+              { 
+                   if(confirm("ARE YOU SURE.....?"))
+                   {
+                    alert("Yes");
+                   }
+                   else
+                   {
+                    alert("No");
+                   }
+
+
+              }
+              function internalPrompt()
+              {
+                var fname=prompt("Enter your firstname");
+                var lname=prompt("Enter your lastname");
+                alert(fname+" "+lname);
+              }
+              function changeBackgroundToOrange()
+              {
+                document.body.style.backgroundColor=prompt("");
+              }
+
+              function pickerColor()
+              {
+                document.body.style.backgroundColor=document.getElementById("c6").value;
+              }
+            </script>
+    </head>
+    <body id="b1" bgcolor="orange">
+        <div id="C1"><img src="C:\Users\student\Downloads/1.png"style=height:400px;width:500px;></div>
+        <hr>
+        <input type="button" value="alert inline" onclick="alert('This is wrong')">
+        <input type="button" value="confirm inline" onclick="confirm('this is right')">
+        <input type="button" value="prompt inline" onclick="prompt('enter name')">
+        <hr>
+        <input type="button" value="alert inline" onclick="internalAlert()">
+        <input type="button" value="confirm inline" onclick="internalConfirm()">
+        <input type="button" value="prompt inline" onclick="internalPrompt()">
+        <hr>
+        <input type="button" value="Runtime changing backgroundcolor" onclick="changeBackgroundTo1115()">
+        <input type="button" value="Runtime changing" onclick="BK()">
+        <input type="color" id="c6" onchange="pickerColor()">
+
+
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("p").on({
+    mouseleave: function(){
+    $(this).css("background-color","pink");
+    },
+    mouseenter: function(){
+    $(this).css("background-color","skyblue");
+    },
+    click: function(){
+    $(this).css("background-color","lightgreen");
+    }
+  });
+    $("p").dblclick(function(){
+    $(this).hide(2000);
+  });
+
+  	$("#show").click(function(){
+    $("p").show(2500);
+    alert("Line will bw appear")
+  });
+});
+</script>
+</head>
+<body>
+<center>
+
+<p>Hello😍 !</p>
+<p>How are you ?</p>
+<p>I am fine🙂</p>
+
+</center>
+
+
+<button id="show">Show</button>
+
+</body>
+</html>
